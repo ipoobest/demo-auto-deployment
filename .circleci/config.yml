@@ -49,11 +49,11 @@ jobs:
       #     command: |
       #       . venv/bin/activate
       #       python manage.py test
-
+	    - run : ssh-key -H 178.128.95.3 >> ~/.ssh/known_host  
+      
       - run:
           name: push
           command: |
             if[ "${CIRCLE_BRANCH}" == "master" ]; then
 			        git push test@178.128.95.3:repository master
 		        fi
-	- run : ssh-key -H 178.128.95.3 >> ~/.ssh/known_host  
