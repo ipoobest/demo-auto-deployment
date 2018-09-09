@@ -15,7 +15,7 @@ jobs:
       - run: 
           command: |
             if[ "${CIRCLE_BRANCH}" == "master" ]; then
-	      git push test@178.128.95.3:repository master 
-	    if
+	        git push test@178.128.95.3:repository master 
+	  if
           
 
