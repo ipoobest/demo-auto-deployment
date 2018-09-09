@@ -7,6 +7,6 @@ WORKDIR /usr/src/app
 ADD . /usr/src/app
 RUN pip install -r requirements.txt
 
-#test change
+#test change test repos
 
 CMD ["gunicorn", "-c", "gunicorn_conf.py", "--chdir", "ndd-app", "ndd.wsgi:application", "--reload"]
