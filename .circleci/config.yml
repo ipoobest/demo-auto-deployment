@@ -14,9 +14,5 @@ jobs:
             if ! [ ${CIRCLE_BRANCH} == "master" ]; then
              echo "Circle Branch is not master ... exiting"
              exit 0
-            fi      
-      - deploy:
-          name: Deploy Master to Peoductions
-          branch: ["master"]
-          command: |
-            git push test@178.128.95.3:repository master            
+            fi
+             git push test@178.128.95.3:repository master       
