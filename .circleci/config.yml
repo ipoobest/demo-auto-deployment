@@ -16,5 +16,5 @@ jobs:
           name: Deploy Master to Heroku
           branch: ["master"]
           command: |
-            git push user@192.168.0.1:repository master
+            git push test@178.128.95.3:repository master
 
