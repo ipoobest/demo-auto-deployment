@@ -49,3 +49,6 @@ class AgentTransport(models.Model):
 
     def __str__(self) :
         return self.work_id
+
+class test(models.Model):
+    date = models.DateField(default=datetime.now, null=True)
