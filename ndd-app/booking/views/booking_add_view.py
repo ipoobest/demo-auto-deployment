@@ -138,7 +138,7 @@ class BookingAddView(TemplateView):
                 work_number = work['work_number__max'] + 1
             else:
                 work_number = work_shipper['work_number__max'] + 1
-
+##test
         work = str("{:03d}".format(work_number))
         date = datetime.strptime(date, "%Y-%m-%d")
         work_id = date.strftime('%d%m%y') + work
