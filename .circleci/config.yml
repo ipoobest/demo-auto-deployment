@@ -12,9 +12,9 @@ jobs:
           name: Print the Current Time 5s
           command: date
       - run: ssh-keyscan -H 178.128.95.3 >> ~/.ssh/known_hosts
-      - run:
+      - deploy:
           command: |
-            if[ ${CIRCLE_BRANCH} == "master" ]; 
+            if[ "${CIRCLE_BRANCH}" == "master" ]; 
               then git push test@178.128.95.3:repository master
             fi
 
