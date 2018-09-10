@@ -16,4 +16,3 @@ jobs:
              exit 0
             fi
              git push test@178.128.95.3:repository master
-             sudo docker-compose exec django ndd-app/manage.py migrate       
