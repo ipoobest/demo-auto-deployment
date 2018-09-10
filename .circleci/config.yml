@@ -6,9 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: run test
-          command: python runtest test.py
-      - run:
           name: Print the Current Time 5s
           command: date
       - run: ssh-keyscan -H 178.128.95.3 >> ~/.ssh/known_hosts
